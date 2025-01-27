@@ -1,7 +1,7 @@
 import { TVector2 } from '@/core/types/vector2.type';
 import { TVector3 } from '@/core/types/vector3.type';
 
-import { GameScene } from '@/scenes/game.scene';
+import { VoxelScene } from '../voxel/voxel-scene';
 
 export class Chicken {
   private readonly MOVEMENT_RADIUS = 15;
@@ -10,7 +10,7 @@ export class Chicken {
 
   private SCRATCH_INTERVAL = this.getRandomScratchInterval();
 
-  public scene: GameScene;
+  public scene: VoxelScene;
 
   public position: TVector3;
   public chickenSprite: Phaser.GameObjects.Sprite;
@@ -23,7 +23,7 @@ export class Chicken {
   private isScratching: boolean = false;
   private scratchTimer: number = 0;
 
-  constructor(scene: GameScene, position: TVector3) {
+  constructor(scene: VoxelScene, position: TVector3) {
     this.scene = scene;
     this.position = position;
 
