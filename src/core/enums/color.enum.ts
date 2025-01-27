@@ -1,0 +1,16 @@
+export enum ColorEnum {
+  BLACK = 0x000000,
+  WHITE = 0xffffff,
+
+  NEUTRAL_100 = 0xf5f5f5,
+  NEUTRAL_200 = 0xe5e5e5,
+  NEUTRAL_300 = 0xd4d4d4,
+  NEUTRAL_400 = 0xa3a3a3,
+  NEUTRAL_500 = 0x737373,
+  NEUTRAL_600 = 0x525252,
+  NEUTRAL_700 = 0x404040,
+  NEUTRAL_800 = 0x262626,
+  NEUTRAL_900 = 0x171717,
+
+  RED_500 = 0xff4242,
+}

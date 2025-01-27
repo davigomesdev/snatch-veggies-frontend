@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Messe Duesseldorf';
+  src: url('./assets/fonts/Messe Duesseldorf.ttf') format('truetype');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Messe Duesseldorf', sans-serif;
+}
+
+::selection {
+  background: transparent;
+  color: inherit;
+}
+
+body {
+  background-color: #b3dbbc;
+}
+
+canvas {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.object-pixelated {
+  image-rendering: pixelated;
+}
