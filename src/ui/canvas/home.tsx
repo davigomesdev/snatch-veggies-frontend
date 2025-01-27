@@ -90,7 +90,7 @@ const Home: React.FC = () => {
   }, [chainId]);
 
   return (
-    <main className="flex h-screen w-full bg-[url('background.png')] bg-cover bg-center">
+    <main className="flex h-screen w-full bg-[url('/background.png')] bg-cover bg-center">
       <section className="flex h-full w-full flex-1 flex-col items-center justify-center">
         <motion.div
           className="w-full sm:max-w-[350px] md:max-w-[650px]"
