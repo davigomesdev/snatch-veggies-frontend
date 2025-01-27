@@ -85,9 +85,6 @@ export const HotbarProvider: React.FC<HotbarProviderProps> = ({ children }) => {
 
   React.useEffect(() => {
     const handleClickOutside = (event: MouseEvent | TouchEvent) => {
-      const phaserCanvas = document.querySelector('canvas');
-      const isClickInsideCanvas = phaserCanvas && phaserCanvas.contains(event.target as Node);
-
       if (
         isOpen &&
         hotbarRef.current &&
